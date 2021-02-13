@@ -8,6 +8,7 @@ import {
 import Store from '../pages/store';
 import About from '../pages/About';
 import Signin from "../pages/registration/Signin";
+import Home from "../pages/home/home";
 import NotFound from '../pages/NotFound';
 import Cart from "../pages/cart";
 import Login from "../pages/registration"
@@ -17,7 +18,8 @@ const Routes = () => {
     <Router>
          <Switch>
           <Route path="/about" component={About} />                                    
-          <Route exact path="/" component={Store}/>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/shop" component={Store}/>
           <Route path="/cart" component={Cart} />
           <Route path="/registration/Signin" component={Signin} />
           <Route path="/registration/Login" component={Login} />

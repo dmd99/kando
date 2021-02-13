@@ -76,4 +76,11 @@ export const dummyProducts = [
     price: "13000",
     photo: "/img/11.jpg"
   },
+  {
+    id: 11,
+    name: "Chaussures Nikes",
+    description:"La description de base d' un produit",
+    price: "13000",
+    photo: "/img/11.jpg"
+  },
 ];

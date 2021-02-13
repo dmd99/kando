@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
 import { CartContext } from '../../contexts/CartContext';
 import Details from './details'
 import { formatNumber } from '../../helpers/utils';
+import {Link} from "react-router-dom"
 
 const ProductItem = ({product}) => {
 
@@ -13,13 +13,12 @@ const ProductItem = ({product}) => {
     }
     return ( 
         <div className="card card-body">
-            <img style={{display: "block", margin: "0 auto 10px", maxHeight: "200px"}} className="img-fluid" 
+            <img alt="..." style={{display: "block", margin: "0 auto 10px", maxHeight: "200px"}} className="img-fluid" 
             src={product.photo + '?v=' + product.id} title={product.description}/>
             <p>{product.name}</p>
             <h3 className="text-left">{formatNumber(product.price)}</h3>
             <div className="text-right">
-                < Details/>
-                {/* <Link  to="/" className="btn btn-link btn-sm mr-2">Details</Link> */}
+                <Link  to="/" className="btn btn-link btn-sm mr-2">Details</Link>
 
                 {
                     isInCart(product) && 

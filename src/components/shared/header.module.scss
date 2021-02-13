@@ -1,7 +1,27 @@
-.header {
-    padding: 10px;
+.brand{
+    margin-left: 0 16px;
+    align-self: center;
+    font-size: 1.2rem;
+    margin: 0;
+    &:hover{
+        text-decoration: none;
+    }
+}
+.header{
+    display: flex;
+    padding: 10px 20px;
+    position: fixed;
+    background-color: white;
+    z-index: 2000000;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.288);
+        
+}
+.nav {
+    width: fit-content;
     text-align: center;
-
     a {
         display: inline-block;
         margin-right: 10px;
@@ -10,5 +30,25 @@
             width: 18px;
             margin-right: 5px;
         }
+    }
+}
+.btn{
+    background: none;
+    outline: none;
+    border: none;
+    display: none;
+    i{
+        font-size: 1rem;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+@media (max-width: 768px) {
+    .nav{
+        display: none;
+    }
+    .btn {
+        display: initial;
     }
 }

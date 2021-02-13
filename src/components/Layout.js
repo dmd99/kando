@@ -14,7 +14,7 @@ const Layout = ({title, description, children}) => {
             <meta name = "description" content={ description || "Kando" } />
         </Helmet>
         <Header/>
-        <main className="container">
+        <main style={{'padding-top':'50px'}} className="container">
             {children}
         </main>
         <Footer/>
