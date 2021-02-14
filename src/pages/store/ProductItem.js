@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../../contexts/CartContext';
-import Details from './details'
+// import Details from './details'
 import { formatNumber } from '../../helpers/utils';
 import {Link} from "react-router-dom"
 
