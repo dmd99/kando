@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import { CartContext } from '../../contexts/CartContext';
 import {CartIcon} from '../icons';
+
 import styles from './header.module.scss';
 
 

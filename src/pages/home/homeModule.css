@@ -1,0 +1,8 @@
+#main{
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+#main img{
+    width: 14rem;
+}

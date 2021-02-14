@@ -7,7 +7,7 @@ const Store = () => {
     
     return ( 
         <Layout title="Boutique" description="Trouvez votre bonheur" >
-            <div >
+            <div className="container">
                 <div className="text-center mt-5">
                     <h1>Boutique</h1>
                     <p>Ceci est la page du magasin.</p>
