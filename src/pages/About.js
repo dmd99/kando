@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import Details from './store/details'
 import SwipeableTemporaryDrawer from "../components/shared/drawer"
 
 const About = () => {
@@ -15,7 +14,6 @@ const About = () => {
                     <span className="ml-2 mr-4">Ne cliquez pas sur ce boutton</span></a>
                     <SwipeableTemporaryDrawer/>
             </div>
-            <Details/>
         </Layout>
      );
 }
