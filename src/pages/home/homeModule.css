@@ -1,3 +1,9 @@
 #main{
     background-color: rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width:764px){
+    #mainImage{
+        height: 400px;
+    }
+
+}
