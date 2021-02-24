@@ -57,13 +57,14 @@ export default function SwipeableTemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <img style={{display:"Block",margin:"10px auto"}} width="150px" alt="logo-kando" src="img/knd-logo.png"/>
-      <List>
-        <ListItem button>
-          <ListItemIcon></ListItemIcon>
-          <ListItemText Primary={"Kando-Market"} />
-        </ListItem>
-      </List>
+      {/* Partie Logo */}
+      <img style={{display:"Block",margin:" 5px auto"}} width="150px" alt="logo-kando" src="img/knd-logo.png"/>
+
+      <Link to="/">
+          <ListItem button>
+            <ListItemText style={{textAlign:"center",fontWeight:"bold",fontSize:"1.5rem",fontFamily:"verdana"}} primary={"Kando Market"} />
+          </ListItem>
+        </Link>
       <Divider />
       <List>
         <Link to="/">
@@ -85,11 +86,6 @@ export default function SwipeableTemporaryDrawer() {
           </ListItem>
         </Link>
       </List>
-      {/* <List>
-        <ListItemLink href="#simple-list">
-          <ListItemText primary="Spam" />
-        </ListItemLink>
-      </List> */}
       <List>
         <Link to="/cart">
           <ListItem button value="test">
@@ -103,22 +99,26 @@ export default function SwipeableTemporaryDrawer() {
       </List>
       <Divider />
       <List>
+      <Link to="/registration/login">
         <ListItem button value="test">
           <ListItemIcon>
-            <AccountCircleIcon />
+            <AccountCircleIcon/>
           </ListItemIcon>
           <ListItemText primary={"Se connecter"} />
         </ListItem>
+        </Link>
+        <Link to="/about">
         <ListItem button value="test">
           <ListItemIcon>
             <ExitToAppIcon/>
           </ListItemIcon>
           <ListItemText primary={"Se déconnecter"} />
         </ListItem>
+        </Link>
       </List>
       <Divider />
       <List>
-        <Link to="/about">
+        <Link to="/">
           <ListItem button value="test">
             <ListItemText primary={"A propos"} />
           </ListItem>
@@ -128,7 +128,7 @@ export default function SwipeableTemporaryDrawer() {
   );
 
   return (
-    <div style={{zIndex: "22222222222"}}>
+    <div style={{zIndex: "222222"}}>
       {["left"].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>

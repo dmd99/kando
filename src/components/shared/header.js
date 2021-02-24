@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import { CartContext } from '../../contexts/CartContext';
 import {CartIcon} from '../icons';
 import SwipeableTemporaryDrawer from "./drawer"
+import HomeIcon from "@material-ui/icons/Home";
+import StoreIcon from "@material-ui/icons/Store";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
 
 import styles from './header.module.scss';
@@ -14,9 +19,9 @@ const Header = () => {
         <header className={styles.header}>
             <Link to="/" className={styles.brand}>Kando-market</Link>
             <nav id="nav" className={styles.nav}>
-                <Link to='/shop'><i className="fa fa-home" aria-hidden="true"></i> Boutique</Link>
-                <Link to='/cart'> <CartIcon/>Panier ({itemCount})</Link>
-                <Link to='/registration/login'><i className="fa fa-user" aria-hidden="true"></i>Compte</Link>
+                <Link to='/shop'><StoreIcon /> Boutique</Link>
+                <Link to='/cart'> <ShoppingCartIcon/>Panier ({itemCount})</Link>
+                <Link to='/registration/login'><AccountCircleIcon />Compte</Link>
                 <Link to='/about'>A propos</Link>
             </nav>
             <span className={styles.btn}>
