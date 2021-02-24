@@ -9,7 +9,13 @@ import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import CartIcon from "@material-ui/icons/Mail";
+import CartIon from "@material-ui/icons/Home";
+import StoreIcon from "@material-ui/icons/Store";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+
+
 
 
 const useStyles = makeStyles({
@@ -51,30 +57,32 @@ export default function SwipeableTemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
+      <img style={{display:"Block",margin:"10px auto"}} width="150px" alt="logo-kando" src="img/knd-logo.png"/>
       <List>
-          <ListItem button>
-            <ListItemIcon></ListItemIcon>
-            <ListItemText Primary={"Kando-Market"} />
-          </ListItem>
+        <ListItem button>
+          <ListItemIcon></ListItemIcon>
+          <ListItemText Primary={"Kando-Market"} />
+        </ListItem>
       </List>
       <Divider />
       <List>
-      <Link to="/about">
-        <ListItem button>
-          <ListItemIcon>
-            {" "}
-            <CartIcon />
-          </ListItemIcon>
-          <ListItemText primary={"Acceuil"} />
-        </ListItem>
+        <Link to="/">
+          <ListItem button>
+            <ListItemIcon>
+              <CartIon />
+            </ListItemIcon>
+            <ListItemText primary={"Acceuil"} />
+          </ListItem>
         </Link>
       </List>
       <List>
-      <Link to="/shop">
-        <ListItem button>
-          <ListItemIcon><CartIcon /></ListItemIcon>
-          <ListItemText primary={"Boutique"} />
-        </ListItem>
+        <Link to="/shop">
+          <ListItem button>
+            <ListItemIcon>
+              <StoreIcon />
+            </ListItemIcon>
+            <ListItemText primary={"Boutique"} />
+          </ListItem>
         </Link>
       </List>
       {/* <List>
@@ -83,24 +91,38 @@ export default function SwipeableTemporaryDrawer() {
         </ListItemLink>
       </List> */}
       <List>
-      <Link to="/about">
-        <ListItem button value="test">
-          <ListItemIcon>
-            {" "}
-            <CartIcon />
-          </ListItemIcon>
-          <ListItemText primary={"Panier"} />
-        </ListItem>
+        <Link to="/cart">
+          <ListItem button value="test">
+            <ListItemIcon>
+              {" "}
+              <ShoppingCartIcon />
+            </ListItemIcon>
+            <ListItemText primary={"Panier"} />
+          </ListItem>
         </Link>
       </List>
       <Divider />
       <List>
         <ListItem button value="test">
           <ListItemIcon>
-            <i className="fa fa-user"></i>
+            <AccountCircleIcon />
           </ListItemIcon>
-          <ListItemText primary={"Panier"} />
+          <ListItemText primary={"Se connecter"} />
         </ListItem>
+        <ListItem button value="test">
+          <ListItemIcon>
+            <ExitToAppIcon/>
+          </ListItemIcon>
+          <ListItemText primary={"Se déconnecter"} />
+        </ListItem>
+      </List>
+      <Divider />
+      <List>
+        <Link to="/about">
+          <ListItem button value="test">
+            <ListItemText primary={"A propos"} />
+          </ListItem>
+        </Link>
       </List>
     </div>
   );
