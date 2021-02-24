@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import { CartContext } from '../../contexts/CartContext';
 import {CartIcon} from '../icons';
-import SwipeableTemporaryDrawer from "../components/shared/drawer"
+import SwipeableTemporaryDrawer from "./drawer"
 
 
 import styles from './header.module.scss';
@@ -19,5 +19,10 @@ const Header = () => {
                 <Link to='/registration/login'><i className="fa fa-user" aria-hidden="true"></i>Compte</Link>
                 <Link to='/about'>A propos</Link>
             </nav>
-            <SwipeableTemporaryDrawer className={styles.btn}/>
- 
+            <span className={styles.btn}>
+            <SwipeableTemporaryDrawer/>
+            </span>
+        </header>
+     );
+}
+export default Header;

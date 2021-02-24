@@ -12,7 +12,7 @@
     padding: 10px 20px;
     position: fixed;
     background-color: white;
-    z-index: 2000000;
+    z-index: 2;
     width: 100%;
     top: 0;
     justify-content: space-between;
@@ -33,9 +33,7 @@
     }
 }
 .btn{
-    background: none;
-    outline: none;
-    border: none;
+    
     display: none;
     i{
         font-size: 1rem;
@@ -44,14 +42,12 @@
         outline: none;
     }
 }
+
 @media (max-width: 768px) {
-    // .nav{
-    //     display: none;
-    // }
-    // .btn {
-    //     display: initial;
-    // }
-    .brand{
+    .nav{
         display: none;
+    }
+    .btn {
+        display: initial;
     }
 }
