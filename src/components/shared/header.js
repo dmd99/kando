@@ -1,11 +1,8 @@
 import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import { CartContext } from '../../contexts/CartContext';
-import {CartIcon} from '../icons';
 import SwipeableTemporaryDrawer from "./drawer"
-import HomeIcon from "@material-ui/icons/Home";
 import StoreIcon from "@material-ui/icons/Store";
-import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
