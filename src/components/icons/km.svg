@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 300" width="330" height="300">
+	<title>km</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #27313d } 
+		.shp1 { fill: #ffffff } 
+	</style>
+	<path id="Shape 4" class="shp0" d="M78 13L252 13C279.65 13 302 35.35 302 63L302 237C302 264.65 279.65 287 252 287L78 287C50.35 287 28 264.65 28 237L28 63C28 35.35 50.35 13 78 13Z" />
+	<path id="Shape 1" class="shp1" d="M72 171L73 237L90 237L90 178L109 162L187 237L210 236L121 148L210 59L186 58L72 171Z" />
+	<path id="Shape 2" class="shp1" d="M140 142L159 161L233 88L233 238L250 237L249 59L236 58L160 135L153 130L140 142Z" />
+	<path id="Shape 3" class="shp1" d="M128 100L115 112L91 89L91 140L73 154L73 59C73 59 85.67 57.63 85 59C84.33 60.37 128 100 128 100Z" />
+</svg>

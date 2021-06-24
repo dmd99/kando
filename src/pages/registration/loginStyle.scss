@@ -1,0 +1,63 @@
+
+$primary: #1A1A1A;
+
+
+.m-text{
+    margin-top: 30px;
+    margin-bottom:50px;
+    border-bottom: 1px solid $primary;
+    padding: 8px;
+    width: fit-content;
+}
+.m-input{
+    border: none;
+    width: 300px;
+    margin-bottom: 24px;
+    border-bottom: thin solid $primary;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    padding: 10px;
+    transition-timing-function: ease-out;
+    transition: border 2s;
+    &:focus{
+        outline: none;
+        border: thin solid $primary;
+    }
+}
+.m-div{
+    width: 300px;
+    display: block;
+    margin: 30px auto;
+}
+.fa-user-circle{
+    width: fit-content;
+    color: $primary;
+    margin-top: 20px;
+    font-size: 100px;
+}
+.signin{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+  /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .m-div{
+        width: 90%;
+        display: block;
+        margin: 30px auto;
+    }    
+    .m-button{
+        width: 100%;
+    }
+    .signin{
+        display: block;
+        text-align: center;
+    }
+    .m-input{
+        width: 90%;
+    text-align: center;
+    border-radius: 0;
+        margin-bottom: 24px;
+    }
+}
