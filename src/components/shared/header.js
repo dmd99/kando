@@ -24,7 +24,6 @@ import {
   Heart,
   Mail,
 } from "react-feather";
-import { Palette } from "@material-ui/icons";
 
 const useStyle = makeStyles({
   toolbar: {
