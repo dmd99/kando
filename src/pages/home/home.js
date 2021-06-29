@@ -11,7 +11,6 @@ import { Carousel } from "3d-react-carousal";
 import React from "react";
 import Layout from "../../components/Layout";
 import "./homeModule.css";
-import emailjs from 'emailjs-com';
 import { DollarSign, MessageSquare, Truck, Shield, ShoppingBag, User } from "react-feather";
 
 const useStyles = makeStyles({
